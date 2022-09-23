@@ -1,5 +1,4 @@
 node { 
-    def mvnHome = tool name: 'maven_home', type: 'maven'
     stage('SCM-Checkout') { 
         git branch: 'main', credentialsId: 'e0029192-7e10-4cd2-8a44-fcf519018017', url: 'https://github.com/AkomBela/NewJavaProject.git' 
     }
